@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Mahamuni | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        background-color: #f8f8f8;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .contact-info div {
+        display: flex;
+        align-items: center;
+        margin: 5px 20px;
+      }
+      .contact-info i {
+        margin-right: 10px;
+        color: #0073b1;
+      }
+      .contact-info p {
+        margin: 0;
+        font-size: 1.1em;
+      }
+      .contact-info a {
+        color: #0073b1;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .social-links a {
+        margin: 0 10px;
+        color: #0073b1;
+        font-size: 1.5em;
+        transition: color 0.3s;
+      }
+      .social-links a:hover {
+        color: #005582;
+      }
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 15px;
+        color: #0073b1;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      section {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Aditya Mahamuni</h1>
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Coventry, UK CV4 7ES</p>
+          </div>
+          <div>
+            <i class="fas fa-phone"></i>
+            <p>+44 7437160753</p>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="mailto:aditya.mahamuni157@gmail.com"
+                >aditya.mahamuni157@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="http://www.linkedin.com/in/adi-mahamuni" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/adityamahamuni" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="projects">
+                <h2>A Clustering and Regression Analysis of Financial Health and Stock Performance</h2>
+                <div class="project-item card">
+                    <p>This project involved a comprehensive analysis of financial health metrics and stock performance of companies listed on the New York Stock Exchange (NYSE). The key objectives were to identify financial clusters of companies and predict stock prices based on historical data, aiding investors in making informed decisions.</p>
+                    <div class="highlight-card">
+                        <h4>Dataset:</h4>
+                        <p>Utilized <a href="https://www.kaggle.com/datasets/dgawlik/nyse/data" target="_blank">NYSE data from Kaggle</a>, including fundamentals and adjusted stock prices.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Clustering Analysis:</h4>
+                        <ul>
+                            <li>Selected highly correlated financial metrics and standardized the data for clustering.</li>
+                            <li>Implemented K-Means clustering algorithm to segment companies into meaningful clusters based on financial characteristics such as profitability, liquidity, and capital expenditure.</li>
+                            <li>Identified clusters of high-growth, financially stable, and risk-prone companies, providing actionable insights for investors.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Regression Analysis:</h4>
+                        <ul>
+                            <li>Developed a linear regression model to predict stock prices using historical closing prices.</li>
+                            <li>Achieved a Root Mean Squared Error (RMSE) of 1.118, indicating strong predictive accuracy in stable market conditions.</li>
+                            <li>Performed rolling window prediction to simulate real-time trading scenarios, enhancing model robustness.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Combined Analysis:</h4>
+                        <ul>
+                            <li>Integrated clustering results with stock price predictions to evaluate the financial health's impact on stock performance.</li>
+                            <li>Found that companies with stable financial metrics had more predictable stock prices, aiding in risk assessment and investment strategy formulation.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Financial Resilience Analysis:</h4>
+                        <ul>
+                            <li>Analyzed the financial resilience of Apple (AAPL) and Nvidia (NVDA) by comparing liquidity ratios, profitability metrics, and cash flow indicators.</li>
+                            <li>Identified Apple as a high-performing company with strong profitability and Nvidia as a company with robust liquidity but potential cash flow concerns.</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/adityamahamuni/DataAnalytics/tree/main/NYSE_Stock_Analysis" target="_blank" class="btn">View Project</a>
+                </div>
+                <h2>Prediction of Protein Expression</h2>
+                <div class="project-item card">
+                    <p>This project aimed to predict protein expression levels in biological tissues using advanced machine learning techniques and image analysis.</p>
+                    <div class="highlight-card">
+                        <h4>Data Analysis:</h4>
+                        <ul>
+                            <li>Utilized PCA, GLCM for feature extraction, and regression models such as OLS and SVR to assess model performance.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Model Development:</h4>
+                        <ul>
+                            <li>Developed a CNN architecture for predicting protein expression levels, achieving an RMSE score of 0.677.</li>
+                            <li>Implemented transfer learning to enhance the model's predictive accuracy.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Evaluation Metrics:</h4>
+                        <ul>
+                            <li>Evaluated model performance using RMSE, R2 Score, and Pearson Correlation Coefficient.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2>Sentiment Classifier for Twitter Data</h2>
+                <div class="project-item card">
+                    <p>This project involved designing and implementing sentiment analysis classifiers to analyze Twitter data and classify sentiments.</p>
+                    <div class="highlight-card">
+                        <h4>Data Processing:</h4>
+                        <ul>
+                            <li>Collected and preprocessed Twitter data, including tokenization, stop word removal, and vectorization.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Model Development:</h4>
+                        <ul>
+                            <li>Developed classifiers using Logistic Regression, Support Vector Machines (SVM), and Naive Bayes.</li>
+                            <li>Enhanced a Long Short-Term Memory (LSTM) network with pre-trained GloVe embeddings to improve sentiment classification accuracy.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Evaluation Metrics:</h4>
+                        <ul>
+                            <li>Evaluated model performance using accuracy, precision, recall, and F1-score.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aditya Mahamuni</p>
+        </div>
+    </footer>
+</body>
+</html>
