@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import FeaturedProjects from "./components/FeaturedProjects";
