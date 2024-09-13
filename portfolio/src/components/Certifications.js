@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaHome, FaChevronRight } from "react-icons/fa";
 
 const certifications = [
   {
@@ -40,45 +41,48 @@ const certifications = [
 const Certifications = ({ darkMode }) => {
   return (
     <section
-      className={`py-16 ${
+      className={`my-2 ${
         darkMode ? "bg-[#1A202C] text-white" : "bg-white text-black"
       } transition-colors duration-300`}
     >
-      {/* Breadcrumb */}
-      <div className="text-lg mb-4">
-        <Link
-          to="/"
-          className="hover:text-blue-500 transition-colors duration-300 underline"
-        >
-          Home
-        </Link>
-        <span className="mx-2">{">>"}</span>
-        <span>Certifications</span>
-      </div>
-
       <div className="container mx-auto px-4 md:px-0 max-w-full lg:max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold border-b-2 border-black dark:border-green-500 pb-4 mb-8">
-          Certifications
-        </h2>
-        <ul className="list-none">
-          {certifications.map((cert, index) => (
-            <li key={index} className="mb-6">
-              <h3 className="text-2xl font-semibold">{cert.title}</h3>
-              <p className="text-lg">{cert.provider}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-300">
-                {cert.date}
-              </p>
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 underline hover:text-blue-700 transition-colors duration-300"
-              >
-                View Certificate
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/* Breadcrumb */}
+        <div className="breadcrumb mb-6 flex items-center text-gray-500">
+          <Link
+            to="/"
+            className="hover:text-blue-500 transition-colors duration-300 flex items-center"
+          >
+            <FaHome className="inline-block mr-2" /> {/* Home Icon */}
+            <span>Home</span>
+          </Link>
+          <FaChevronRight className="mx-2 text-gray-400" aria-hidden="true" />
+          <span className="text-gray-700">Certifications</span>
+        </div>
+
+        <div className="container mx-auto px-4 md:px-0 max-w-full lg:max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold border-b-2 border-black dark:border-green-500 pb-4 mb-8">
+            Certifications
+          </h2>
+          <ul className="list-none">
+            {certifications.map((cert, index) => (
+              <li key={index} className="mb-6">
+                <h3 className="text-2xl font-semibold">{cert.title}</h3>
+                <p className="text-lg">{cert.provider}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-300">
+                  {cert.date}
+                </p>
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline hover:text-blue-700 transition-colors duration-300"
+                >
+                  View Certificate
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

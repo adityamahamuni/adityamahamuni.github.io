@@ -1,35 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ResumeSection from "./ResumeSection"; // Ensure this path is correct
+import ResumeSection from "./ResumeSection";
+import Breadcrumbs from "./BreadcrumbsSection";
 
 const AboutMePage = ({ darkMode }) => {
   return (
-    <section
-      className={`py-8 ${
-        darkMode ? "bg-[#1A202C] text-white" : "bg-white text-black"
-      } transition-colors duration-300`}
-    >
-      <div className="container mx-auto px-4 md:px-0 max-w-full lg:max-w-5xl">
-        {/* Adjusted breadcrumb navigation */}
-        <div className="text-lg mb-4 mt-2">
-          {" "}
-          {/* Added margin-top to fix positioning */}
-          <Link
-            to="/"
-            className="hover:text-blue-500 transition-colors duration-300 underline"
-          >
-            Home
-          </Link>
-          <span className="mx-2">{">>"}</span>
-          <span>About</span>
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-green-400">
-          About Me
-        </h2>
-
+    <section className="my-2">
+      <div className="container mx-auto px-4 max-w-full lg:max-w-5xl">
+        <Breadcrumbs path="About" />
+        <h2 className="text-3xl font-bold">About Me</h2>
         <ResumeSection />
-
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-black dark:text-green-400">
             🌟 Professional Work Experience Overview{" "}
