@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import AboutMePage from "./components/AboutMePage";
 import Certifications from "./components/Certifications";
 import ProjectsPage from "./components/ProjectsPage";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false); // Default to light mode
@@ -63,7 +64,7 @@ function App() {
               />
             </Routes>
           </div>
-
+          <BackToTop />
           <Footer darkMode={darkMode} />
         </div>
       </div>
