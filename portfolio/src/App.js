@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import FeaturedProjects from "./components/FeaturedProjects";
@@ -8,6 +8,18 @@ import AboutMePage from "./components/AboutMePage";
 import Certifications from "./components/Certifications";
 import ProjectsPage from "./components/ProjectsPage";
 import BackToTop from "./components/BackToTop";
+import { initializeAnalytics, logPageView } from './analytics'; // Import your analytics functions
+
+// Component to log page views on route change
+const AnalyticsWrapper = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    logPageView();
+  }, [location]);
+
+  return null;
+};
 
 function App() {
   const [darkMode, setDarkMode] = useState(false); // Default to light mode
@@ -26,8 +38,14 @@ function App() {
     }
   }, [darkMode]);
 
+  // Initialize Google Analytics when the app is first loaded
+  useEffect(() => {
+    initializeAnalytics(); // Initialize analytics
+  }, []);
+
   return (
     <Router>
+      <AnalyticsWrapper />
       <div className={darkMode ? "dark" : ""}>
         <div
           className={`transition-colors duration-300 bg-white dark:bg-[#1A202C] dark:text-white text-black`}
