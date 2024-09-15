@@ -10,6 +10,9 @@ import ProjectsPage from "./components/ProjectsPage";
 import BackToTop from "./components/BackToTop";
 import { initializeAnalytics, logPageView } from './analytics'; // Import your analytics functions
 
+import FinancialAnalysisPage from "./blogs/FinancialAnalysisPage";
+
+
 // Component to log page views on route change
 const AnalyticsWrapper = () => {
   const location = useLocation();
@@ -80,6 +83,8 @@ function App() {
                 path="/projects"
                 element={<ProjectsPage darkMode={darkMode} />}
               />
+              <Route path="/financial-analysis" element={<FinancialAnalysisPage darkMode={darkMode} />} />
+
             </Routes>
           </div>
           <BackToTop />

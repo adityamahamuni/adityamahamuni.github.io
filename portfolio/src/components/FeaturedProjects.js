@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedProjects = ({ darkMode }) => {
   return (
@@ -17,7 +18,6 @@ const FeaturedProjects = ({ darkMode }) => {
         </h2>
 
         {/* First Project */}
-
         <div className="mb-8">
           <h3 className="text-xl md:text-2xl font-bold text-black dark:text-green-400 hover:underline">
             <a
@@ -36,25 +36,17 @@ const FeaturedProjects = ({ darkMode }) => {
             This project focuses on the development of a robust system for the
             extraction and classification of financial events from unstructured
             textual data using advanced Natural Language Processing (NLP)
-            techniques and Large Language Models (LLMs). The primary goal is to
-            enhance the accuracy and timeliness of financial event detection,
-            such as corporate announcements and significant market-moving news,
-            which can be crucial for financial analysts, automated trading
-            systems, and decision-makers.
+            techniques and Large Language Models (LLMs).
           </p>
         </div>
 
         {/* Second Project */}
         <div className="mb-8">
           <h3 className="text-xl md:text-2xl font-bold text-black dark:text-green-400 hover:underline">
-            <a
-              href="https://github.com/adityamahamuni/DataAnalytics/tree/main/NYSE_Stock_Analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="/financial-analysis">
               A Clustering and Regression Analysis of Financial Health and Stock
               Performance
-            </a>
+            </Link>
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
             Dec 2023

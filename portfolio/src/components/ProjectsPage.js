@@ -17,7 +17,7 @@ const projects = [
     date: "Dec 2023",
     description:
       "Enhanced risk assessment and decision-making for financial analysis by developing a Python-based financial analysis tool, achieving 99% accuracy.",
-    link: "https://github.com/adityamahamuni/DataAnalytics/tree/main/NYSE_Stock_Analysis",
+    link: "/financial-analysis", // Updated link to internal route
   },
   {
     title: "Prediction of Protein Expression",
@@ -60,14 +60,9 @@ const ProjectsPage = ({ darkMode }) => {
           {projects.map((project, index) => (
             <div key={index} className="border-b-2 border-gray-300 pb-4">
               <h3 className="text-2xl font-semibold text-black dark:text-green-400">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
+                <Link to={project.link} className="hover:underline">
                   {project.title}
-                </a>
+                </Link>
               </h3>
               <p className="text-sm text-gray-500">{project.date}</p>
               <p className="mt-2">{project.description}</p>
