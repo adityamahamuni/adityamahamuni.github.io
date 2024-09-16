@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaPython } from "react-icons/fa";
-import { SiPytorch, SiNumpy, SiScikitlearn } from "react-icons/si";
+import { SiPytorch, SiNumpy } from "react-icons/si";
 
 const EventExtractionPage = ({ darkMode }) => {
   const [inputText, setInputText] = useState("");
@@ -11,7 +11,7 @@ const EventExtractionPage = ({ darkMode }) => {
   const handleInference = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8001/api/event-extraction",
+        "https://api.adityamahamuni.me/api/event-extraction",
         {
           method: "POST",
           headers: {
@@ -100,7 +100,7 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         <p className="text-lg text-black dark:text-white mb-4">
-          Project can be accessed on {" "}
+          Project can be accessed on{" "}
           <a
             href="https://github.com/adityamahamuni/financial-event-extraction"
             target="_blank"
