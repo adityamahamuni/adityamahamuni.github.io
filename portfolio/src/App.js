@@ -10,7 +10,8 @@ import ProjectsPage from "./components/ProjectsPage";
 import BackToTop from "./components/BackToTop";
 import { initializeAnalytics, logPageView } from './analytics'; // Import your analytics functions
 
-import FinancialAnalysisPage from "./blogs/FinancialAnalysisPage";
+import FinancialAnalysisPage from "./blogs/FinancialAnalysis/FinancialAnalysisPage";
+import EventExtractionPage from "./blogs/EventExtraction/EventExtractionPage";
 
 
 // Component to log page views on route change
@@ -84,6 +85,7 @@ function App() {
                 element={<ProjectsPage darkMode={darkMode} />}
               />
               <Route path="/financial-analysis" element={<FinancialAnalysisPage darkMode={darkMode} />} />
+              <Route path="/event-extraction" element={<EventExtractionPage darkMode={darkMode} />} />
 
             </Routes>
           </div>

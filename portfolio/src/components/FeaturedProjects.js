@@ -20,14 +20,10 @@ const FeaturedProjects = ({ darkMode }) => {
         {/* First Project */}
         <div className="mb-8">
           <h3 className="text-xl md:text-2xl font-bold text-black dark:text-green-400 hover:underline">
-            <a
-              href="https://github.com/adityamahamuni/Event-Extraction-from-Financial-Articles-Using-Natural-Language-Processing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="/event-extraction">
               Event Extraction from Financial Articles Using Natural Language
               Processing (MSc Dissertation)
-            </a>
+            </Link>
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
             Jan 2024 - Sept 2024
