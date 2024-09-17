@@ -288,6 +288,32 @@ const EventExtractionPage = ({ darkMode }) => {
         <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
           Model Inference
         </h2>
+
+        {/* Explanation about the input and events */}
+        <p className="text-lg mb-4 text-black dark:text-white">
+          Please enter a financial news article or a segment of text related to
+          financial events. The model is trained to extract the following
+          financial event types:
+        </p>
+        <ul className="list-disc list-inside mb-4 text-black dark:text-white">
+          <li>Acquisition (A)</li>
+          <li>Clinical Trial (CT)</li>
+          <li>Regular Dividend (RD)</li>
+          <li>Dividend Cut (DC)</li>
+          <li>Dividend Increase (DI)</li>
+          <li>Guidance Increase (GI)</li>
+          <li>New Contract (NC)</li>
+          <li>Reverse Stock Split (RSS)</li>
+          <li>Special Dividend (SD)</li>
+          <li>Stock Repurchase (SR)</li>
+          <li>Stock Split (SS)</li>
+          <li>Other/None (O)</li>
+        </ul>
+        <p className="text-lg mb-4 text-black dark:text-white">
+          Input any financial text such as news about mergers, acquisitions,
+          stock splits, dividend announcements, or other corporate events.
+        </p>
+
         <textarea
           className="w-full p-4 mb-4 border rounded-lg"
           rows="5"
@@ -326,7 +352,7 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Zero-Shot Learning Results */}
-        <h3 className="text-xl font-bold mb-2">Zero-Shot Learning</h3>
+        <h3 className="text-xl font-bold mb-4">Zero-Shot Learning</h3>
         <p className="text-lg">
           Zero-shot learning results varied depending on the model used. BART
           achieved high performance, with an Exact Match (EM) of 0.9239 and F1
@@ -337,7 +363,7 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Few-Shot Learning Results */}
-        <h3 className="text-xl font-bold mb-2">Few-Shot Learning</h3>
+        <h3 className="text-xl font-bold mb-4">Few-Shot Learning</h3>
         <p className="text-lg">
           Few-shot learning, with selection strategies such as BM25 and SBERT,
           improved performance further. BM25 emerged as the most effective
@@ -347,7 +373,7 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Fine-Tuning Results */}
-        <h3 className="text-xl font-bold mb-2">Fine-Tuning</h3>
+        <h3 className="text-xl font-bold mb-4">Fine-Tuning</h3>
         <p className="text-lg">
           Fine-tuned models performed best, with the Flan T5 model achieving an
           F1 score of 0.9701 during testing, while GPT-2 achieved an even higher
@@ -358,7 +384,7 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Real-World Validation */}
-        <h3 className="text-xl font-bold mb-2">Real-World Validation</h3>
+        <h3 className="text-xl font-bold mb-4">Real-World Validation</h3>
         <p className="text-lg">
           The models were tested on real-world financial articles, successfully
           identifying critical events such as stock repurchases (SR), special
