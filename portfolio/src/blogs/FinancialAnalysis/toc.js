@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import { Link as RouterLink } from "react-router-dom"; // Use Link from react-router-dom
 
 const TableOfContents = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = (e, sectionId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <section className="my-8">
@@ -14,57 +23,94 @@ const TableOfContents = () => {
       {isOpen && (
         <ul className="list-disc list-inside space-y-1 pl-4 text-sm text-black dark:text-white">
           <li>
-            <a href="#introduction" className="hover:underline">
+            <RouterLink
+              to="#introduction"
+              onClick={(e) => handleClick(e, "introduction")}
+              className="hover:underline"
+            >
               Introduction
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#problem-statement" className="hover:underline">
+            <RouterLink
+              to="#problem-statement"
+              onClick={(e) => handleClick(e, "problem-statement")}
+              className="hover:underline"
+            >
               Problem Statement
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#dataset-technologies" className="hover:underline">
+            <RouterLink
+              to="#dataset-technologies"
+              onClick={(e) => handleClick(e, "dataset-technologies")}
+              className="hover:underline"
+            >
               Dataset and Technologies Used
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#data-cleaning-eda" className="hover:underline">
+            <RouterLink
+              to="#data-cleaning-eda"
+              onClick={(e) => handleClick(e, "data-cleaning-eda")}
+              className="hover:underline"
+            >
               Data Cleaning and EDA
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#clustering-analysis" className="hover:underline">
+            <RouterLink
+              to="#clustering-analysis"
+              onClick={(e) => handleClick(e, "clustering-analysis")}
+              className="hover:underline"
+            >
               Clustering Analysis
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#regression-analysis" className="hover:underline">
+            <RouterLink
+              to="#regression-analysis"
+              onClick={(e) => handleClick(e, "regression-analysis")}
+              className="hover:underline"
+            >
               Regression Analysis
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#combined-analysis" className="hover:underline">
+            <RouterLink
+              to="#combined-analysis"
+              onClick={(e) => handleClick(e, "combined-analysis")}
+              className="hover:underline"
+            >
               Combined Analysis
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#resilience-analysis" className="hover:underline">
+            <RouterLink
+              to="#resilience-analysis"
+              onClick={(e) => handleClick(e, "resilience-analysis")}
+              className="hover:underline"
+            >
               Resilience Analysis
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a href="#conclusion-recommendations" className="hover:underline">
+            <RouterLink
+              to="#conclusion-recommendations"
+              onClick={(e) => handleClick(e, "conclusion-recommendations")}
+              className="hover:underline"
+            >
               Conclusion & Recommendations
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a
-              href="#answers-to-research-questions"
+            <RouterLink
+              to="#answers-to-research-questions"
+              onClick={(e) => handleClick(e, "answers-to-research-questions")}
               className="hover:underline"
             >
               Answers to Research Questions
-            </a>
+            </RouterLink>
           </li>
         </ul>
       )}

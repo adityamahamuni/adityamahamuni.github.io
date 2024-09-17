@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaPython } from "react-icons/fa";
 import { SiPytorch, SiNumpy } from "react-icons/si";
+import TableOfContents from "./toc";
 
 const EventExtractionPage = ({ darkMode }) => {
   const [inputText, setInputText] = useState("");
@@ -46,7 +47,7 @@ const EventExtractionPage = ({ darkMode }) => {
       } transition-colors duration-300`}
     >
       {/* Breadcrumbs */}
-      <nav className="breadcrumb mb-6 text-gray-500">
+      <nav className="breadcrumb mb-2 text-gray-500">
         <Link
           to="/"
           className="hover:text-blue-500 transition-colors duration-300"
@@ -65,7 +66,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </nav>
 
       {/* Introduction Section */}
-      <section className="my-8">
+      <section id="introduction" className="my-8">
         <h1 className="text-4xl font-bold mb-4 text-black dark:text-green-400">
           <a
             href="https://github.com/adityamahamuni/financial-event-extraction"
@@ -85,8 +86,12 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
       </section>
 
+      <section className="my-8">
+        <TableOfContents />
+      </section>
+
       {/* Problem Statement Section */}
-      <section className="my-8 p-6">
+      <section id="problem-statement" className="my-8 p-6">
         <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
           Problem Statement
         </h2>
@@ -111,7 +116,7 @@ const EventExtractionPage = ({ darkMode }) => {
           </a>
         </p>
 
-        <h3 className="text-2xl font-semibold mb-4 text-black dark:text-white">
+        <h3 id="research-objectives" className="text-2xl font-semibold mb-4 text-black dark:text-white">
           Research Objectives
         </h3>
         <ul className="list-disc list-inside space-y-2 text-black dark:text-white">
@@ -144,7 +149,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* Dataset and Technologies Section */}
-      <section className="my-8">
+      <section id="dataset-technologies" className="my-8">
         <h2 className="text-2xl font-semibold mb-4">
           Dataset and Technologies Used
         </h2>
@@ -170,7 +175,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* Prompt Engineering Section */}
-      <section className="my-8 p-6">
+      <section id="prompt-engineering" className="my-8 p-6">
         <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
           Prompt Engineering
         </h2>
@@ -237,7 +242,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* Fine-Tuning and Model Training Section */}
-      <section className="my-8 p-6">
+      <section id="fine-tuning-training" className="my-8 p-6">
         <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
           Fine-Tuning and Model Training
         </h2>
@@ -284,7 +289,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* LLM Inference Section */}
-      <section className="my-8 p-6">
+      <section id="model-inference" className="my-8 p-6">
         <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
           Model Inference
         </h2>
@@ -310,7 +315,7 @@ const EventExtractionPage = ({ darkMode }) => {
           <li>Other/None (O)</li>
         </ul>
         <p className="text-lg mb-4 text-black dark:text-white">
-          Input any financial text such as news about mergers, acquisitions,
+          Input any financial article such as news about mergers, acquisitions,
           stock splits, dividend announcements, or other corporate events.
         </p>
 
@@ -340,9 +345,9 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* Results and Analysis Section */}
-      <section className="my-8">
-        <h2 className="text-2xl font-semibold mb-4">Results and Analysis</h2>
-        <p className="text-lg">
+      <section id="results-analysis" className="my-8">
+        <h2 className="text-2xl font-semibold mb-2">Results and Analysis</h2>
+        <p className="text-lg mb-6">
           The experiments were conducted using various models like GPT-2, BART,
           FlanT5, and GPT-4, with both zero-shot and few-shot learning
           strategies. The project demonstrated that fine-tuned models
@@ -352,8 +357,8 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Zero-Shot Learning Results */}
-        <h3 className="text-xl font-bold mb-4">Zero-Shot Learning</h3>
-        <p className="text-lg">
+        <h3 className="text-xl font-bold mb-2">Zero-Shot Learning</h3>
+        <p className="text-lg mb-6">
           Zero-shot learning results varied depending on the model used. BART
           achieved high performance, with an Exact Match (EM) of 0.9239 and F1
           score of 0.9605, making it suitable for zero-shot tasks. On the other
@@ -363,8 +368,8 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Few-Shot Learning Results */}
-        <h3 className="text-xl font-bold mb-4">Few-Shot Learning</h3>
-        <p className="text-lg">
+        <h3 className="text-xl font-bold mb-2">Few-Shot Learning</h3>
+        <p className="text-lg mb-6">
           Few-shot learning, with selection strategies such as BM25 and SBERT,
           improved performance further. BM25 emerged as the most effective
           selection strategy, achieving an F1 score of 0.327, closely followed
@@ -373,8 +378,8 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Fine-Tuning Results */}
-        <h3 className="text-xl font-bold mb-4">Fine-Tuning</h3>
-        <p className="text-lg">
+        <h3 className="text-xl font-bold mb-2">Fine-Tuning</h3>
+        <p className="text-lg mb-6">
           Fine-tuned models performed best, with the Flan T5 model achieving an
           F1 score of 0.9701 during testing, while GPT-2 achieved an even higher
           score of 0.9752. This fine-tuning process enabled the models to
@@ -384,8 +389,8 @@ const EventExtractionPage = ({ darkMode }) => {
         </p>
 
         {/* Real-World Validation */}
-        <h3 className="text-xl font-bold mb-4">Real-World Validation</h3>
-        <p className="text-lg">
+        <h3 className="text-xl font-bold mb-2">Real-World Validation</h3>
+        <p className="text-lg mb-6">
           The models were tested on real-world financial articles, successfully
           identifying critical events such as stock repurchases (SR), special
           dividends (SD), and acquisitions (A). However, minor errors occurred,
@@ -393,7 +398,7 @@ const EventExtractionPage = ({ darkMode }) => {
           underscoring the need for further refinement.
         </p>
 
-        <p className="text-lg">
+        <p className="text-lg mb-6">
           Overall, fine-tuned LLMs outperformed zero-shot and few-shot learning
           strategies, demonstrating their strength in financial event extraction
           tasks. This performance, combined with the models' ability to
@@ -403,7 +408,7 @@ const EventExtractionPage = ({ darkMode }) => {
       </section>
 
       {/* Conclusion Section */}
-      <section className="my-8">
+      <section id="conclusion" className="my-8">
         <h2 className="text-2xl font-semibold mb-4">Conclusion</h2>
         <p className="text-lg">
           This project successfully demonstrated the potential of LLMs in
