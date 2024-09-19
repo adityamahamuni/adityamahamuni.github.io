@@ -9,7 +9,7 @@ const projects = [
     date: "Jan 2024 - Sept 2024",
     description:
       "Developed and implemented NLP techniques for event extraction from financial articles, leveraging zero-shot and few-shot learning using generative capabilities of different LLM models.",
-    link: "https://github.com/adityamahamuni/Event-Extraction-from-Financial-Articles-Using-Natural-Language-Processing",
+    link: "/event-extraction",
   },
   {
     title:
@@ -17,7 +17,7 @@ const projects = [
     date: "Dec 2023",
     description:
       "Enhanced risk assessment and decision-making for financial analysis by developing a Python-based financial analysis tool, achieving 99% accuracy.",
-    link: "/financial-analysis", // Updated link to internal route
+    link: "/financial-analysis",
   },
   {
     title: "Prediction of Protein Expression",
