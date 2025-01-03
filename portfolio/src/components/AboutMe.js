@@ -13,18 +13,19 @@ const AboutMe = ({ darkMode }) => {
           Hello! <span className="inline-block">👋</span>
         </h1>
         <p className="text-base md:text-lg mb-4">
-          I'm Aditya Mahamuni, an aspiring Machine Learning Engineer with over
-          four years of Python experience, specializing in Machine Learning,
-          Natural Language Processing, and Software Engineering.
+          Hi, I'm Aditya Mahamuni, a Machine Learning Engineer at NatWest,
+          specializing in Applied AI and the development of Large Language Model
+          (LLM) applications. With over four years of Python experience and a
+          strong foundation in Machine Learning, NLP, and Software Engineering,
+          I am passionate about building innovative solutions that bridge the
+          gap between human intelligence and artificial ingenuity.
         </p>
         <p className="text-base md:text-lg mb-6">
-          My journey has taken me from developing innovative frameworks at
-          NVIDIA to pursuing an MSc in Computer Science at the University of
-          Warwick, where I delve into Data Mining, NLP, Machine Learning and
-          High-Performance Computing. At the heart of my work lies a passion for
-          bridging the gap between human intelligence and artificial ingenuity.
-          Discover my projects and insights on my portfolio, or dive into my
-          professional story through my resume.
+          My professional journey includes impactful work at Nvidia, where I
+          optimized CI/CD pipelines and developed autonomous vehicle simulation
+          tools, and academic achievements from the University of Warwick, where
+          I earned an MSc in Computer Science, focusing on Data Mining, NLP,
+          Machine Learning, and High-Performance Computing.
         </p>
         <p className="text-base md:text-lg mb-8">
           When I'm not coding, you can find me exploring the latest tech trends,

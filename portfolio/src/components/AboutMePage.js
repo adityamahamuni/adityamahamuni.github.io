@@ -15,15 +15,23 @@ const AboutMePage = ({ darkMode }) => {
             🌟 Professional Work Experience Overview{" "}
           </h3>
           <p className="mt-4">
-            Hello and welcome! I'm <strong>Aditya Mahamuni</strong>, a
-            passionate Software Developer with a focus on Machine Learning,
-            Natural Language Processing, and Software Engineering. Over the past
-            4+ years, my professional journey has taken me across various
-            domains and industries, from developing scalable frameworks at{" "}
+            Hello and welcome! I'm <strong>Aditya Mahamuni</strong>, a Machine
+            Learning Engineer at <strong>NatWest Group</strong>, specializing in Machine Learning, Natural Language
+            Processing, and Software Engineering. Over the past 4+ years, my
+            professional journey has taken me across various domains and
+            industries, from developing scalable frameworks at{" "}
             <strong>Nvidia Corporation</strong> to pursuing a{" "}
             <strong>MSc in Computer Science</strong> from the University of
-            Warwick.
+            Warwick and currently working at NatWest.
           </p>
+
+          <ul className="list-disc mt-4 pl-8">
+            <li>
+              <strong>
+                Machine Learning Engineer at NatWest Group (Dec 2024 – Current)
+              </strong>
+            </li>
+          </ul>
 
           <ul className="list-disc mt-4 pl-8">
             <li>

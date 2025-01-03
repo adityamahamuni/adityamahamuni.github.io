@@ -1,1 +1,0 @@
-# adityamahamuni.github.io
