@@ -12,7 +12,7 @@ const ResumeSection = ({ darkMode }) => {
   return (
     <div className="py-8">
       <h2 className="text-2xl font-bold mb-4 text-black dark:text-green-400">Resume</h2>
-      <p className="text-lg italic mb-4">"Check out my resume here."</p>
+      <p className="text-lg italic mb-4">My experience, technical skills, education, and selected projects.</p>
       <a
         href="/Resume_Aditya_Mahamuni.pdf"
         target="_blank"

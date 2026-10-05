@@ -1,9 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = ({ darkMode, onThemeSwitch }) => {
-  const location = useLocation();
-  const breadcrumbs = location.pathname === "/about" ? "Home >> About" : "";
 
   // For Mobile Menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,6 +43,7 @@ const Header = ({ darkMode, onThemeSwitch }) => {
         {/* Dark Mode Toggle - Always Visible */}
         <div className="ml-auto md:ml-4">
           <button
+            aria-label={darkMode ? "Switch to light theme" : "Switch to dark theme"}
             onClick={onThemeSwitch}
             className="p-2 rounded-md transition-colors duration-300 border-2 border-transparent hover:border-blue-500"
           >
@@ -89,6 +88,8 @@ const Header = ({ darkMode, onThemeSwitch }) => {
         {/* Hamburger Menu for Mobile */}
         <div className="flex md:hidden ml-4">
           <button
+            aria-label="Open navigation menu"
+            aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-3xl"
           >
@@ -101,6 +102,7 @@ const Header = ({ darkMode, onThemeSwitch }) => {
       {isMenuOpen && (
         <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 flex flex-col items-center justify-center space-y-6 text-lg font-bold text-white">
           <button
+            aria-label="Close navigation menu"
             onClick={() => setIsMenuOpen(false)}
             className="absolute top-4 right-4 text-white text-4xl"
           >

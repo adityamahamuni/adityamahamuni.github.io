@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import profile from "../data/profile.json";
 import ResumeSection from "./ResumeSection";
 import Breadcrumbs from "./BreadcrumbsSection";
 
@@ -9,46 +9,23 @@ const AboutMePage = ({ darkMode }) => {
       <div className="container mx-auto px-4 max-w-full lg:max-w-5xl">
         <Breadcrumbs path="About" />
         <h2 className="text-3xl font-bold">About Me</h2>
-        <ResumeSection />
+        <ResumeSection darkMode={darkMode} />
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-black dark:text-green-400">
-            🌟 Professional Work Experience Overview{" "}
-          </h3>
-          <p className="mt-4">
-            Hello and welcome! I'm <strong>Aditya Mahamuni</strong>, a Machine
-            Learning Engineer at <strong>NatWest Group</strong>, specializing in Machine Learning, Natural Language
-            Processing, and Software Engineering. Over the past 4+ years, my
-            professional journey has taken me across various domains and
-            industries, from developing scalable frameworks at{" "}
-            <strong>Nvidia Corporation</strong> to pursuing a{" "}
-            <strong>MSc in Computer Science</strong> from the University of
-            Warwick and currently working at NatWest.
-          </p>
-
-          <ul className="list-disc mt-4 pl-8">
-            <li>
-              <strong>
-                Machine Learning Engineer at NatWest Group (Dec 2024 – Current)
-              </strong>
-            </li>
-          </ul>
-
-          <ul className="list-disc mt-4 pl-8">
-            <li>
-              <strong>
-                Software Developer at Nvidia Corporation (July 2019 – Aug 2023):
-              </strong>
-              <ul className="list-disc mt-2 pl-8">
-                <li>Designed a scalable Python framework for AV simulation.</li>
-                <li>
-                  Optimized CI/CD pipelines with Python, Docker, and Gitlab CI.
-                </li>
-                <li>
-                  Developed ML tools and pipelines using PyTorch/TensorFlow.
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <h3 className="text-2xl font-semibold text-black dark:text-green-400">Professional experience</h3>
+          <p className="mt-4">{profile.summary}</p>
+          {profile.roles.map(role => (
+            <article key={role.company} className="mt-8">
+              <h4 className="text-xl font-semibold">{role.title} · {role.company}</h4>
+              <p className="text-gray-600 dark:text-gray-300 mt-1">{role.location} | {role.dates}</p>
+              <ul className="list-disc mt-4 pl-6 space-y-2">{role.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>
+            </article>
+          ))}
+        </div>
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-black dark:text-green-400">Technical skills</h3>
+          <dl className="mt-4 space-y-4">{Object.entries(profile.skills).map(([name, skills]) => (
+            <div key={name}><dt className="font-semibold">{name}</dt><dd className="mt-1 text-gray-700 dark:text-gray-300">{skills}</dd></div>
+          ))}</dl>
         </div>
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-black dark:text-green-400">

@@ -8,7 +8,7 @@ const projects = [
       "Event Extraction from Financial Articles Using Natural Language Processing",
     date: "Jan 2024 - Sept 2024",
     description:
-      "Developed and implemented NLP techniques for event extraction from financial articles, leveraging zero-shot and few-shot learning using generative capabilities of different LLM models.",
+      "Developed and implemented NLP techniques for event extraction from financial articles, using zero-shot and few-shot LLM learning, generative models, and fine-tuning.",
     link: "/event-extraction",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
       "A Clustering and Regression Analysis of Financial Health and Stock Performance",
     date: "Dec 2023",
     description:
-      "Enhanced risk assessment and decision-making for financial analysis by developing a Python-based financial analysis tool, achieving 99% accuracy.",
+      "Developed a Python-based financial analysis project using clustering and regression to explore company financial health, market patterns, and stock performance.",
     link: "/financial-analysis",
   },
   {
