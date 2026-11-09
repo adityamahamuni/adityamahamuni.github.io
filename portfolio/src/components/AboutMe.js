@@ -9,20 +9,21 @@ const AboutMe = ({ darkMode }) => {
     >
       {" "}
       <div className="container mx-auto text-left px-4 md:px-0">
-        <p className="text-sm font-semibold tracking-widest uppercase text-gray-600 dark:text-green-400 mb-4">Machine Learning Engineer · London, UK</p>
+        <p className="text-sm font-semibold tracking-widest uppercase text-gray-600 dark:text-green-400 mb-4">Applied AI Engineer · London, UK</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Building reliable GenAI<br className="hidden md:block" /> and agentic systems.</h1>
         <p className="text-base md:text-lg mb-4">
-          I'm Aditya Mahamuni, a Machine Learning Engineer at NatWest. My work spans production GenAI,
-          agent frameworks, synthetic data, and evaluation and controls, backed by a strong foundation
-          in Python and software engineering.
+          I'm Aditya Mahamuni, a Machine Learning Engineer at NatWest focused on applied AI. I build
+          production Python services, agentic applications, synthetic-data pipelines, and evaluation
+          workflows, backed by a strong foundation in software engineering.
         </p>
         <p className="text-base md:text-lg mb-6">
           Previously at NVIDIA, I built autonomous vehicle simulation tools, automated testing frameworks,
           and CI/CD pipelines. I hold an MSc in Computer Science from the University of Warwick.
         </p>
         <p className="text-base md:text-lg mb-6">
-          I work with tool-using agents, RAG, MCP, FastAPI, and AWS Bedrock/SageMaker to build and assess
-          practical AI applications. Outside work, I enjoy reading, travelling, and learning languages.
+          My work includes automated complaints investigation using AI agents, MCP integrations,
+          and fine-tuning for COBOL code completion using LoRA and AWS SageMaker. I use evaluation
+          frameworks and observability tools to assess model and agent behaviour.
         </p>
         <div className="flex flex-wrap gap-4 mb-8">
           <a href="/about" className="inline-block px-5 py-3 bg-black text-white dark:bg-green-400 dark:text-black rounded-md font-semibold">Experience &amp; skills</a>

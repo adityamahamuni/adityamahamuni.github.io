@@ -6,37 +6,37 @@
       "title": "Machine Learning Engineer",
       "dates": "Dec 2024 - Present",
       "bullets": [
-        "Built and evaluated agent framework prototypes using LangGraph, CrewAI, OpenAI Agents SDK, PydanticAI, smolagents, and AutoGen; developed reusable patterns for routing, tool use, handoffs, and multi-agent orchestration.",
-        "Built a production FastAPI microservice to orchestrate tool-using AI agents, with a focus on reliable service integration and maintainable software design.",
-        "Designed and built a reusable synthetic-data generation framework with a domain-agnostic core and pluggable adapters, using structured LLM outputs and validation to support development and evaluation.",
-        "Contributed to the design and development of a GenAI evaluation and controls framework to support consistent assessment of LLM applications and agentic systems.",
-        "Designed adversarial and prompt-injection evaluations using synthetic data, and used targeted scenarios to assess model quality and refine prompts.",
-        "Developed reusable coding-agent skills for repeatable, agent-assisted engineering tasks.",
-        "Led cross-team delivery, owned technical design decisions, and communicated progress and outcomes to stakeholders and leadership."
+        "Built a synthetic-data pipeline for complex, multi-system workflows, enabling rapid evaluation experiments, model regression analysis, and adversarial testing without production data; reduced issue diagnosis and resolution turnaround time by 70%.",
+        "Developed a production FastAPI service for automated complaints investigation using AI agents, integrating event-driven orchestration, execution tracking, persistence, and feedback APIs.",
+        "Built workflows using observability tools and evaluation frameworks to assess LLM and agent outputs, retrieval, tool use, and failure modes, supporting reliable iteration and regression investigation.",
+        "Prototyped LangGraph, OpenAI Agents SDK, smolagents, and AutoGen; designed reusable routing, handoff, parallel, and evaluator-optimizer patterns and assessed production trade-offs.",
+        "Built MCP tools and integrations for knowledge retrieval, developer platforms, and custom services to support multi-step agent workflows.",
+        "Led cross-team delivery, owned technical design decisions, and communicated progress and outcomes to stakeholders and leadership.",
+        "Fine-tuned a language model using LoRA for COBOL code completion, infilling, and domain-specific question answering; evaluated task performance and integrated inference through AWS SageMaker endpoints into agent-assisted developer workflows."
       ]
     },
     {
       "company": "NVIDIA Corporation",
       "location": "Pune, India",
       "title": "Software Developer",
-      "dates": "July 2019 - Aug 2023",
+      "dates": "Jul 2019 - Aug 2023",
       "bullets": [
-        "Designed a scalable Python framework and training scenarios for autonomous vehicle simulation.",
-        "Optimized CI/CD pipelines using Python, GitLab CI, and Docker to improve deployment efficiency and scenario updates.",
-        "Created automated testing frameworks with Jenkins and Python to reduce manual effort and shorten testing cycles.",
-        "Developed ML tools and CI/CD pipelines using NLP, PyTorch, and TensorFlow.",
-        "Built a Python and Linux diagnostic tool to improve platform reliability.",
-        "Led technical projects and collaborated with cross-functional teams to deliver against project requirements."
+        "Developed a scalable Python framework and training scenarios for autonomous-vehicle simulation to support scenario-driven development and testing.",
+        "Optimised Python, GitLab CI, and Docker delivery pipelines to improve deployment efficiency and accelerate scenario updates.",
+        "Built Jenkins/Python automated testing frameworks that reduced manual testing effort and shortened test cycles.",
+        "Developed ML tooling and CI/CD workflows using NLP, PyTorch, and TensorFlow to support development and experimentation.",
+        "Created a Python/Linux diagnostic tool that reduced platform-specific issues and improved debugging reliability."
       ]
     }
   ],
   "skills": {
     "Programming": "Python, C++, SQL",
-    "Software engineering": "Object-oriented programming, design patterns, FastAPI, REST APIs, event-driven architecture, Kafka, PostgreSQL, Pydantic, JWT, distributed systems",
+    "Software engineering": "Object-oriented programming, design patterns, FastAPI, REST APIs, event-driven architecture, Kafka, PostgreSQL, Pydantic, JWT/RBAC, distributed systems",
     "AI / LLM engineering": "LLM applications, agentic AI, RAG, prompt and context engineering, structured outputs, tool-using agents, synthetic data, evaluation and controls, adversarial evaluation, prompt-injection testing, MCP",
     "Agent frameworks": "LangGraph, OpenAI Agents SDK, CrewAI, PydanticAI, smolagents, AutoGen",
     "Tools and cloud": "Linux, Docker, Jenkins, GitLab CI, Git, JIRA, Kibana, Grafana, Agile (Scrum), AWS Bedrock, AWS SageMaker",
-    "Machine learning": "NLP, Transformers, PyTorch, TensorFlow, PEFT / LoRA concepts, fine-tuning strategy, model evaluation and deployment"
+    "Machine learning": "NLP, Transformers, PyTorch, TensorFlow, fine-tuning, LoRA, model evaluation, SageMaker inference integration",
+    "Evaluation and observability": "LLM and agent evaluation, observability tools, evaluation frameworks, synthetic data, retrieval and tool-use evaluation, regression analysis, adversarial testing"
   },
-  "summary": "Machine Learning Engineer focused on production GenAI, agentic systems, evaluation, and controls. Experienced in agent frameworks, backend services, synthetic data, adversarial evaluation, RAG/MCP tooling, and AWS Bedrock/SageMaker. Strong background in Python, distributed systems, CI/CD, and cross-team delivery."
+  "summary": "Applied AI Engineer with experience designing reliable AI systems, developing scalable Python services, and translating emerging machine learning capabilities into practical software solutions. Combines strong software engineering fundamentals with expertise in agentic AI, LLM applications, evaluation, and cloud-based deployment; experienced in cross-functional engineering and delivering solutions in complex environments."
 }

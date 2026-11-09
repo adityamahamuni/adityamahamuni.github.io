@@ -23,7 +23,7 @@ const projects = [
     title: "Prediction of Protein Expression",
     date: "Feb 2024 - Mar 2024",
     description:
-      "Built a prediction model utilizing image analysis to predict protein expression levels in various biological tissues, achieving an RMSE score of 0.677.",
+      "Developed image-based features using PCA, GLCM, and transfer learning; explored OLS, SVR, and CNN approaches to predict tissue protein expression, with a CNN RMSE of 0.677.",
     link: "https://github.com/adityamahamuni/DataMining/blob/main/Protein%20Expression%20Prediction/DataMining2024_assignment_2.ipynb",
   },
   {
