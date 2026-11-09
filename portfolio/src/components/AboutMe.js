@@ -22,6 +22,12 @@ const AboutMe = ({ darkMode }) => {
           support adversarial testing to help teams iterate on reliable AI systems.
         </p>
         <p className="text-base md:text-lg mb-6">
+          Alongside evaluation, I've contributed to a FastAPI backend microservice for automated
+          complaints investigation using AI agents, and to LoRA fine-tuning for COBOL code completion
+          with inference through AWS SageMaker endpoints. My wider work at NatWest includes MCP
+          integrations and prototyping agent orchestration patterns for multi-step workflows.
+        </p>
+        <p className="text-base md:text-lg mb-6">
           Previously at NVIDIA, I built autonomous vehicle simulation tools, automated testing frameworks,
           and CI/CD pipelines. I hold an MSc in Computer Science from the University of Warwick.
         </p>
