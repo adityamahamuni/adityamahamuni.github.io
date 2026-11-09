@@ -12,18 +12,18 @@ const AboutMe = ({ darkMode }) => {
         <p className="text-sm font-semibold tracking-widest uppercase text-gray-600 dark:text-green-400 mb-4">Applied AI Engineer · London, UK</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Building reliable GenAI<br className="hidden md:block" /> and agentic systems.</h1>
         <p className="text-base md:text-lg mb-4">
-          I'm Aditya Mahamuni, a Machine Learning Engineer at NatWest focused on applied AI. I build
-          production Python services, agentic applications, synthetic-data pipelines, and evaluation
-          workflows, backed by a strong foundation in software engineering.
+          I'm Aditya Mahamuni, a Machine Learning Engineer at NatWest focused on applied AI,
+          with a strong foundation in Python and software engineering.
+        </p>
+        <p className="text-base md:text-lg mb-6">
+          My current focus is evaluating LLMs and AI agents. I build evaluation workflows and
+          synthetic-data pipelines to assess outputs, retrieval, tool use, and failure modes.
+          Using evaluation frameworks and observability tools, I investigate regressions and
+          support adversarial testing to help teams iterate on reliable AI systems.
         </p>
         <p className="text-base md:text-lg mb-6">
           Previously at NVIDIA, I built autonomous vehicle simulation tools, automated testing frameworks,
           and CI/CD pipelines. I hold an MSc in Computer Science from the University of Warwick.
-        </p>
-        <p className="text-base md:text-lg mb-6">
-          My work includes automated complaints investigation using AI agents, MCP integrations,
-          and fine-tuning for COBOL code completion using LoRA and AWS SageMaker. I use evaluation
-          frameworks and observability tools to assess model and agent behaviour.
         </p>
         <div className="flex flex-wrap gap-4 mb-8">
           <a href="/about" className="inline-block px-5 py-3 bg-black text-white dark:bg-green-400 dark:text-black rounded-md font-semibold">Experience &amp; skills</a>

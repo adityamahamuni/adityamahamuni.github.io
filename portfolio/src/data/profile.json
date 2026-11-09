@@ -6,13 +6,13 @@
       "title": "Machine Learning Engineer",
       "dates": "Dec 2024 - Present",
       "bullets": [
-        "Built a synthetic-data pipeline for complex, multi-system workflows, enabling rapid evaluation experiments, model regression analysis, and adversarial testing without production data; reduced issue diagnosis and resolution turnaround time by 70%.",
-        "Developed a production FastAPI service for automated complaints investigation using AI agents, integrating event-driven orchestration, execution tracking, persistence, and feedback APIs.",
         "Built workflows using observability tools and evaluation frameworks to assess LLM and agent outputs, retrieval, tool use, and failure modes, supporting reliable iteration and regression investigation.",
+        "Built a synthetic-data pipeline for complex, multi-system workflows, enabling rapid evaluation experiments, model regression analysis, and adversarial testing without production data; reduced issue diagnosis and resolution turnaround time by 70%.",
+        "Contributed to a production FastAPI backend microservice for the team's automated complaints investigation system, supporting AI-agent orchestration, execution tracking, persistence, and feedback APIs.",
         "Prototyped LangGraph, OpenAI Agents SDK, smolagents, and AutoGen; designed reusable routing, handoff, parallel, and evaluator-optimizer patterns and assessed production trade-offs.",
         "Built MCP tools and integrations for knowledge retrieval, developer platforms, and custom services to support multi-step agent workflows.",
         "Led cross-team delivery, owned technical design decisions, and communicated progress and outcomes to stakeholders and leadership.",
-        "Fine-tuned a language model using LoRA for COBOL code completion, infilling, and domain-specific question answering; evaluated task performance and integrated inference through AWS SageMaker endpoints into agent-assisted developer workflows."
+        "Contributed to a team project fine-tuning a language model using LoRA for COBOL code completion, infilling, and domain-specific question answering, including task evaluation and inference integration through AWS SageMaker endpoints."
       ]
     },
     {
@@ -38,5 +38,5 @@
     "Machine learning": "NLP, Transformers, PyTorch, TensorFlow, fine-tuning, LoRA, model evaluation, SageMaker inference integration",
     "Evaluation and observability": "LLM and agent evaluation, observability tools, evaluation frameworks, synthetic data, retrieval and tool-use evaluation, regression analysis, adversarial testing"
   },
-  "summary": "Applied AI Engineer with experience designing reliable AI systems, developing scalable Python services, and translating emerging machine learning capabilities into practical software solutions. Combines strong software engineering fundamentals with expertise in agentic AI, LLM applications, evaluation, and cloud-based deployment; experienced in cross-functional engineering and delivering solutions in complex environments."
+  "summary": "Applied AI Engineer focused on evaluating LLMs and AI agents, with experience in synthetic-data pipelines, observability, regression analysis, and adversarial testing. Combines Python software engineering with cross-functional delivery to assess system behaviour and support reliable iteration in complex environments."
 }
